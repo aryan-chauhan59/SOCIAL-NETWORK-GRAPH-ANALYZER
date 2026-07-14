@@ -1,0 +1,22 @@
+{
+  "name": "social-network-analyzer-parent",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev -w social-network-analyzer-backend",
+    "dev:frontend": "npm run dev -w social-network-analyzer-frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:backend": "npm run build -w social-network-analyzer-backend",
+    "build:frontend": "npm run build -w social-network-analyzer-frontend",
+    "build": "npm run build:frontend && npm run build:backend",
+    "clean": "rm -rf frontend/dist backend/dist network.json backend/network.json backend/users.json users.json",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

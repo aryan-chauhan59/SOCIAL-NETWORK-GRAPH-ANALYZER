@@ -1,0 +1,6 @@
+{
+  "name": "Social Network Analyzer",
+  "description": "An interactive social network visualization and analysis tool powered by a Python backend and React frontend, featuring BFS shortest path, DFS community detection, degree centrality rankings, and an interactive CLI console.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
