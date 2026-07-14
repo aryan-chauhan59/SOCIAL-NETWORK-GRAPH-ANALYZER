@@ -14,7 +14,7 @@
     "build:frontend": "npm run build -w social-network-analyzer-frontend",
     "build": "npm run build:frontend && npm run build:backend",
     "clean": "rm -rf frontend/dist backend/dist network.json backend/network.json backend/users.json users.json",
-    "start": "npm run dev"
+    "start": "NODE_ENV=production node backend/dist/server.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
